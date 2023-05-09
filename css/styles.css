@@ -574,7 +574,7 @@ button: {
     background-color: var(--acent-color);
     mix-blend-mode: normal;
     transform: translateY(100%);
-    transition: transform var(--animation-speed);
+    transition: transform var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-shadow {
@@ -582,8 +582,8 @@ button: {
     transition: box-shadow var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-shadow:hover .overlay-text,
-.projects-shadow:focus .overlay-text {
+.projects-shadow:hover .overlay,
+.projects-shadow:focus .overlay {
     transform: translateY(0);
 }
 
